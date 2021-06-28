@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="index.css">
+
+  <title>Focale</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-light d-flex align-items-center justify-content-center fixed-top">
+    <a class="navbar-brand d-flex align-items-center justify-content-center" href="focusApp.html">
+      <img src="./img/favicon.ico" width="70" height="70" class="d-inline-block" alt="Focale Logo">
+      <span class="title-text">Focale</span>
+      <img src="./img/favicon.ico" width="70" height="70" class="d-inline-block" alt="Focale Logo">
+    </a>
+  </nav>
+
+  <section id="cover">
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="content" id="main-content">
+        <div class="timer-container text-center">
+          <h1 class="header-text">Study Timer &#128214;</h1>
+          <div class="heading-separator"></div>
+          <div class="row hidden" id="timer-row">
+            <div class="col-12">
+              <h1 class="display-3" id="timer">XX:XX</h1>
+              <button class="btn generic-button hover-effect" id="reset-button">Reset</button>
+              <button class="btn generic-button hover-effect" id="pause-button">Pause</button>
+            </div>
+          </div>
+
+
+          <div class="row" id="inputs">
+            <div class="col">
+              <div class="form-info d-flex justify-content-center align-items-center">
+                <input type="number" class="form-control" placeholder="Study minutes &#127891;" id="minute-input">
+                <button class="btn hover-effect" id="start-button">Start</button>
+              </div>
+              <p class="mt-2 error-text hidden">Error: Please enter a time from 1-999 minutes.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row text-center mt-3">
+          <div class="col-12">
+            <a href="#playlist1" class="btn hover-effect" id="playlist-button">Study Playlists &#127926;</a>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+<div class="separator"></div>
+
+  <section id="music">
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <div class="col-md-4 text-center playlist-content">
+            <h2 class="playlist-name">&#128221; Study Playlist 1</h2>
+            <iframe src="https://open.spotify.com/embed/playlist/05xyO7biBhcZ9OIXPBRiST?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media" id="playlist1"></iframe>
+            <cite><a href="https://open.spotify.com/playlist/05xyO7biBhcZ9OIXPBRiST" target="_blank">Christina Zhang</a></cite>
+          </div>
+
+          <div class="col-md-4 text-center playlist-content">
+            <h2 class="playlist-name">&#127979; Study Playlist 2</h2>
+            <iframe src="https://open.spotify.com/embed/playlist/471N195f5jAVs086lzYglw" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <cite><a href="https://open.spotify.com/playlist/471N195f5jAVs086lzYglw" target="_blank">Naeleck</a></cite>
+          </div>
+
+          <div class="col-md-4 text-center playlist-content">
+            <h2 class="playlist-name">&#127970; Study Playlist 3</h2>
+              <iframe src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <cite><a href="https://open.spotify.com/playlist/0vvXsWCC9xrXsKd4FyS8kM" target="_blank">Lofi Girl</a></cite>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center playlist-content">
+            <h2 class="playlist-name">&#128251; Study Playlist 4</h2>
+              <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZeKCadgRdKQ" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <cite><a href="https://open.spotify.com/playlist/37i9dQZF1DWZeKCadgRdKQ" target="_blank">Spotify</a></cite>
+          </div>
+          <div class="col-md-4 text-center playlist-content">
+            <h2 class="playlist-name">&#x266b; Study Playlist 5</h2>
+              <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSoyxGghlqv5" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <cite><a href="https://open.spotify.com/playlist/37i9dQZF1DWSoyxGghlqv5" target="_blank">Spotify</a></cite>
+          </div>
+
+          <div class="col-md-4 text-center playlist-content">
+            <h2 class="playlist-name">&#127928; Study Playlist 6</h2>
+              <iframe src="https://open.spotify.com/embed/playlist/1lCxPgDJMLU0rItXniVaEh" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <cite><a href="https://open.spotify.com/playlist/1lCxPgDJMLU0rItXniVaEh" target="_blank">Filtr US</a></cite>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center">
+      Get the Focale extension <a href="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc" target="_blank" class="text-reset">here</a>!
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
