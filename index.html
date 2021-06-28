@@ -13,7 +13,7 @@
 <body>
 
   <nav class="navbar navbar-light d-flex align-items-center justify-content-center fixed-top">
-    <a class="navbar-brand d-flex align-items-center justify-content-center" href="focusApp.html">
+    <a class="navbar-brand d-flex align-items-center justify-content-center" href="index.html">
       <img src="./img/favicon.ico" width="70" height="70" class="d-inline-block" alt="Focale Logo">
       <span class="title-text">Focale</span>
       <img src="./img/favicon.ico" width="70" height="70" class="d-inline-block" alt="Focale Logo">
@@ -21,7 +21,7 @@
   </nav>
 
   <section id="cover">
-    <div class="container d-flex justify-content-center align-items-center">
+    <div class="container mt-5 d-flex justify-content-center align-items-center">
       <div class="content" id="main-content">
         <div class="timer-container text-center">
           <h1 class="header-text">Study Timer &#128214;</h1>
@@ -38,7 +38,7 @@
           <div class="row" id="inputs">
             <div class="col">
               <div class="form-info d-flex justify-content-center align-items-center">
-                <input type="number" class="form-control" placeholder="Study minutes &#127891;" id="minute-input">
+                <input type="number" class="form-control" min="1" max="999" placeholder="Study minutes &#127891;" id="minute-input">
                 <button class="btn hover-effect" id="start-button">Start</button>
               </div>
               <p class="mt-2 error-text hidden">Error: Please enter a time from 1-999 minutes.</p>
@@ -113,13 +113,29 @@
 
   <!-- Footer -->
   <footer class="page-footer">
-
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="lead">Focale</p>
+          <p>With more than 200 million websites on the internet, it is undoubtedly difficult for some students to focus. With this in mind, Focale was created with a mission of helping students focus and stay productive.</p>
+        </div>
+        <div class="col-sm-6">
+          <p class="lead">Links</p>
+          <ul>
+            <li><a href="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc" target="_blank" class="link">Chrome Extension</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeuJP9NP3vyJ7e8Vrp9NDn18v3o1zkrPmoy4RiZt_e0LDCT-A/viewform" target="_blank" class="link">Feature Request</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc0Bfqn1bImvI6D38suGkaTBs4cBfrJYG6qXd2rdH5hUfAK1w/viewform" target="_blank" class="link">Join the Team</a></li>
+            <li><a href="mailto:ganningcws@gmail.com" target="_blank" class="link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="height: 2rem;"></div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center">
+        <b>Get the Focale extension <a href="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc" target="_blank" class="link">here</a>!</b>
+      </div>
     <!-- Copyright -->
-    <div class="footer-copyright text-center">
-      Get the Focale extension <a href="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc" target="_blank" class="text-reset">here</a>!
-    </div>
-    <!-- Copyright -->
-
+  </div>
   </footer>
   <!-- Footer -->
 

@@ -26,13 +26,15 @@ footer {
 
 .container {
   height: 90%;
-  margin-top: 5rem;
 }
 
 .timer-container {
-  background-color: rgba(89, 87, 87, 0.6);
+  background-color: rgba(0, 0, 128, 0.4);
   border-radius: 20px;
   padding: 3rem;
+}
+.mt-5 {
+  margin-top: 5rem;
 }
 
 .header-text {
@@ -151,6 +153,11 @@ footer {
 	color: white;
 	letter-spacing: 5px;
 }
+
+.link, .link:hover {
+  color: rgb(238, 238, 238);
+}
+
 
 #main-content {
   width: 80%;
